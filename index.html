@@ -5,26 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Services Company</title>
     <style>
-        /* Add your custom CSS styles here */
         body {
-            background-color: #f7d6e0; /* Colorful background */
+            background-color: #f9f9f9;
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
         header {
-            background-color: #ffd700; /* Header background color */
+            background-color: #333;
+            color: #fff;
             padding: 20px;
             text-align: center;
         }
         nav {
-            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
         }
         nav a {
-            margin-right: 20px;
+            color: #fff;
             text-decoration: none;
-            color: #333;
+            margin: 0 10px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
         }
         .services {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .service {
+            flex: 1;
             padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         footer {
             background-color: #333;
@@ -36,26 +53,37 @@
 </head>
 <body>
     <header>
-        <h1>Media Services Company</h1>
         <nav>
             <a href="#">Home</a>
             <a href="#">Products</a>
             <a href="#">Contact</a>
         </nav>
+        <h1>Welcome to our Media Services Company</h1>
+        <p>Your one-stop solution for all media-related needs.</p>
+        <button>Contact Us</button>
     </header>
-    <div class="services">
+    <div class="container">
         <h2>Our Services</h2>
-        <p>We provide high-quality media services, including:</p>
-        <ul>
-            <li>Video production</li>
-            <li>Audio editing</li>
-            <li>Graphic design</li>
-            <li>Content marketing</li>
-        </ul>
-        <img src="media-services.jpg" alt="Media Services" width="300">
+        <div class="services">
+            <div class="service">
+                <img src="video-icon.png" alt="Video Production">
+                <h3>Video Production</h3>
+                <p>We create stunning videos for your brand.</p>
+            </div>
+            <div class="service">
+                <img src="audio-icon.png" alt="Audio Production">
+                <h3>Audio Production</h3>
+                <p>High-quality audio recording and editing.</p>
+            </div>
+            <div class="service">
+                <img src="design-icon.png" alt="Design Services">
+                <h3>Design Services</h3>
+                <p>Graphic design, animation, and more.</p>
+            </div>
+        </div>
     </div>
     <footer>
-        © 2024 Media Services Company. All rights reserved.
+        <p>© 2023 Media Services Company. All rights reserved.</p>
     </footer>
 </body>
 </html>
